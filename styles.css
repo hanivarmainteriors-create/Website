@@ -29,8 +29,12 @@ img{width:100%;display:block}
 a.topbar-item:hover{color:var(--accent-light)}
 
 .site-header{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:16px 7%;background:rgba(245,243,239,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.logo{display:flex;align-items:center;color:var(--dark)}
-.logo-svg{height:42px;width:auto;display:block}
+.logo{display:flex;align-items:center;gap:12px;color:var(--dark)}
+.logo-icon{height:48px;width:auto;flex:none;display:block}
+.logo-text-group{display:flex;flex-direction:column;line-height:1.25}
+.logo-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;color:var(--dark)}
+.logo-title span{color:var(--accent-dark);font-weight:500}
+.logo-subtitle{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .nav{display:flex;gap:32px;font-size:13px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--dark)}
 .nav a{position:relative;padding:4px 0;transition:color .2s ease}
 .nav a::after{content:'';position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--accent-dark);transition:width .2s ease}
