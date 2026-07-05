@@ -62,3 +62,10 @@ footer{text-align:center;padding:28px 7%;background:var(--dark);color:#cab9a8;fo
   .menu-btn{display:block}.nav{position:absolute;top:74px;left:7%;right:7%;display:none;flex-direction:column;background:var(--white);padding:22px;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.12)}.nav.open{display:flex}
   .two-col,.cards,.gallery,.steps{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.section{padding:72px 6%}.hero{padding-left:6%;padding-right:6%}.gallery-item{height:300px}
 }
+.contact-details{margin:28px auto 0;text-align:left;max-width:620px;background:var(--cream);border:1px solid rgba(33,26,22,.08);border-radius:24px;padding:24px;color:var(--text)}
+.contact-details p{margin:8px 0}
+.contact-details a{color:var(--dark);font-weight:600}
+.contact-details a:hover{color:var(--gold)}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:60;background:#25d366;color:#fff;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.whatsapp-float:hover{transform:translateY(-2px)}
+@media(max-width:600px){.contact-card{padding:36px 22px}.contact-details{text-align:center}.whatsapp-float{right:14px;bottom:14px;padding:12px 14px;font-size:13px}}
