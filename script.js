@@ -16,6 +16,29 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+const inquiryForm = document.getElementById('inquiryForm');
+if (inquiryForm) {
+  inquiryForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const name = inquiryForm.name.value.trim();
+    const email = inquiryForm.email.value.trim();
+    const subject = inquiryForm.subject.value.trim();
+    const message = inquiryForm.message.value.trim();
+
+    const lines = [
+      'Hi Hani Interiors, I would like to get in touch.',
+      `Name: ${name}`
+    ];
+    if (email) lines.push(`Email: ${email}`);
+    if (subject) lines.push(`Subject: ${subject}`);
+    lines.push(`Message: ${message}`);
+
+    const text = encodeURIComponent(lines.join('\n'));
+    window.open(`https://wa.me/919989767899?text=${text}`, '_blank', 'noopener');
+    inquiryForm.reset();
+  });
+}
+
 const projectDetails = {
   'living-room': {
     eyebrow: 'Residential Interiors',
